@@ -1,1 +1,13 @@
 @use './utilities/reset' as *;
+
+body {
+	color: #fff;
+	overflow: hidden;
+}
+
+.square {
+	width: 400px;
+	height: 400px;
+	background-color: lime;
+	border: 3px solid black;
+}
