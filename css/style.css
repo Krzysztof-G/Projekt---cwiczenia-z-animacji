@@ -47,30 +47,63 @@ table {
   border-spacing: 0;
 }
 
+@keyframes color {
+  0% {
+    top: 0;
+    left: 250px;
+    width: 400px;
+    background-color: lime;
+  }
+  50% {
+    top: 100px;
+    left: 300px;
+    width: 800px;
+    background-color: royalblue;
+  }
+  100% {
+    top: 150px;
+    left: 800px;
+    width: 200px;
+    background-color: tomato;
+  }
+}
+@keyframes circle {
+  from {
+    top: 0;
+    left: 0;
+    background-color: royalblue;
+  }
+  to {
+    top: 50%;
+    left: 50%;
+    background-color: lime;
+    transform: translate(-50%, -50%);
+  }
+}
 body {
   color: #fff;
   overflow: hidden;
 }
 
 .square {
+  position: absolute;
   width: 400px;
   height: 400px;
   background-color: lime;
   border: 3px solid black;
-  animation: color 2s ease-in-out;
+  animation: color 5s ease-in-out;
 }
 
-@keyframes color {
-  0% {
-    width: 400px;
-    background-color: lime;
-  }
-  50% {
-    width: 800px;
-    background-color: royalblue;
-  }
-  100% {
-    width: 200px;
-    background-color: tomato;
-  }
+.square:hover {
+  animation-play-state: paused;
+}
+
+.circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: gold;
+  animation: circle 5s ease-in-out;
+  animation-direction: alternate;
 }/*# sourceMappingURL=style.css.map */
