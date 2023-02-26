@@ -1,8 +1,23 @@
 @keyframes colors {
-	from{
+	from {
 		background-position: 0 0;
 	}
-	to{
+	to {
 		background-position: 100% 0;
+	}
+}
+
+@keyframes fade {
+	10% {
+		opacity: 1;
+		background-color: purple;
+	}
+	50% {
+		opacity: 0;
+		background-color: royalblue;
+	}
+	100% {
+		opacity: 1;
+		background-color: purple;
 	}
 }

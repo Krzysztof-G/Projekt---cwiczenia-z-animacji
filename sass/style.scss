@@ -8,6 +8,27 @@ body {
 	height: 30vh;
 	background-image: linear-gradient(80deg, tomato, tomato, gold, royalblue, lime, royalblue, gold, tomato, tomato);
 	background-size: 800%;
-	animation: colors 5s linear infinite;
+	animation: colors 8s linear infinite;
 }
 
+.wrapper {
+	margin: 50px;
+	text-align: center;
+	line-height: 10px;
+}
+
+.square {
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	background-color: #fff;
+	border-radius: 2px;
+}
+
+.square:nth-child(2n) {
+	animation: fade 1s infinite;
+}
+
+.square:nth-child(3n) {
+	animation: fade 0.5s infinite;
+}
